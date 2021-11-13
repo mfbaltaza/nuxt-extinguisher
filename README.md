@@ -1,5 +1,5 @@
-# client
-
+# Extinguisher2U
+This is a basic Nuxt app I'm making to start getting more comfortable with Nuxt and VueJS
 ## Build Setup
 
 ```bash
