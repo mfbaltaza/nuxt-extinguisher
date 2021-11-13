@@ -1,6 +1,8 @@
 <template>
   <div class="container">
-    <h4 class="header">{{ cardsSection.title }}</h4>
+    <h4 class="header">
+      {{ cardsSection.title }}
+    </h4>
     <p class="snippet">
       {{ cardsSection.snippet }}
     </p>
@@ -16,6 +18,7 @@
 
 <script>
 export default {
+  // eslint-disable-next-line vue/require-prop-types
   props: ['cardsSection']
 }
 </script>

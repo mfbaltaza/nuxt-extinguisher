@@ -10,9 +10,9 @@
         adipisci maiores corrupti minima veniam quis fuga earum assumenda saepe
         accusamus molestiae!
       </p>
-      <button class="button btn">
+      <NuxtLink to="/products" class="button btn">
         Start Looking
-      </button>
+      </NuxtLink>
     </div>
     <img src="~assets/svg/fire-extinguisher.svg" alt="Fire Extinguisher">
   </div>
