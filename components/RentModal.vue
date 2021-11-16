@@ -16,7 +16,15 @@
           is-range
         />
       </div>
-      <b-button id="show-btn" variant="outline-danger" class="my-3">
+      <b-button
+        id="show-btn"
+        variant="outline-danger"
+        class="my-3"
+        @click="() => {
+          addItem(product.id)
+          hideModal()
+        }"
+      >
         Order
       </b-button>
     </b-modal>
@@ -24,7 +32,9 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
 export default {
+  props: ['product'],
   methods: {
     showModal () {
       this.$refs['my-modal'].show()
@@ -36,7 +46,8 @@ export default {
       // We pass the ID of the button that we want to return focus to
       // when the modal has hidden
       this.$refs['my-modal'].toggle('#toggle-btn')
-    }
+    },
+    ...mapMutations(['addItem'])
   }
 }
 </script>

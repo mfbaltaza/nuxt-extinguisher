@@ -15,6 +15,9 @@
       </div>
     </div>
     <div class="whats-included-container">
+      <NuxtLink to="/my-items">
+        My Items
+      </NuxtLink>
       <div class="included-container">
         <h6>Super Effective</h6>
         <p>
